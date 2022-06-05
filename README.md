@@ -52,6 +52,7 @@ Save password in encrypted format. (use bcrypt)
 Response format
 On success - Return HTTP status 201. Also return the user document. The response should be a JSON object like this
 On error - Return a suitable error message with a valid HTTP status code. The response should be a JSON object like this
+
 {
     "status": true,
     "message": "User created successfully",
@@ -80,6 +81,7 @@ On error - Return a suitable error message with a valid HTTP status code. The re
         "__v": 0
     }
 }
+
 POST /login
 Allow an user to login with their email and password.
 On a successful login attempt return the userId and a JWT token contatining the userId, exp, iat.
